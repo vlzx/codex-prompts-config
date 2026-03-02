@@ -71,6 +71,14 @@
 - Avoid unnecessary abstraction, speculative generalization, and over-engineering.
 - If a complex solution is chosen, explain why simpler alternatives are not viable first.
 
+## Language-Specific Rules
+<!-- zh: 语言专项规则 -->
+### Python
+<!-- zh: Python 规则 -->
+- For string interpolation involving variables, use f-strings.
+- Must not use `except:` (bare except). Catch specific exception types; use `except Exception` only at explicit application boundaries with concrete handling.
+- Must provide type hints for parameters and return values on all newly added or modified functions; test-only helper functions may be exempt.
+
 ## Default Workflow
 <!-- zh: 默认流程 -->
 - If user does not explicitly request code changes:
