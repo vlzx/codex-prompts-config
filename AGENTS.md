@@ -73,35 +73,9 @@
 
 ## Specialized Rules
 <!-- zh: 专项规则 -->
-### Backend
-<!-- zh: 后端规则 -->
-- Must define explicit request/response schemas for APIs;
-  do not return ad-hoc untyped payloads.
-- Must validate and sanitize all external inputs at boundary layers.
-- Must use process-wide DB connection management with pooled clients;
-  avoid per-request connection creation.
-- Must ensure all queries and external calls use explicit timeouts, cancellable context, and explicit deadlines;
-  no unbounded waits.
-- Must retry only transient failures with bounded exponential backoff and jitter;
-  never retry non-idempotent operations unless idempotency is guaranteed;
-  must cap retries with `max_retries=3` by default unless the user explicitly requests otherwise;
-  must log the final failure reason and total retry elapsed time when `max_retries` is exhausted.
-- Must use async for FastAPI request handlers and I/O-bound paths;
-  blocking calls in the event loop are prohibited;
-  blocking I/O must be offloaded to thread pools;
-  CPU-bound work must be offloaded to process pools (or background workers).
-- Must record end-to-end request latency in milliseconds for every endpoint;
-  must separately measure DB latency and external-call latency (including timeout counts).
-- Must log request/response content for every endpoint.
-
-### Python
-<!-- zh: Python 规则 -->
-- Must provide type hints for parameters and return values on all newly added or modified functions;
-  test-only helper functions may be exempt.
-- Must not use `except:` (bare except);
-  catch specific exception types;
-  use `except Exception` only at explicit application boundaries with concrete handling.
-- For string interpolation involving variables, use f-strings.
+- Backend rules are moved to skill: [`backend-rules`](.agents/skills/backend-rules/SKILL.md).
+- Python rules are moved to skill: [`python-rules`](.agents/skills/python-rules/SKILL.md).
+- For backend tasks, load and follow `backend-rules`; for Python tasks, load and follow `python-rules`.
 
 ## Default Workflow
 <!-- zh: 默认流程 -->
@@ -144,4 +118,4 @@
 
 ## Last Updated
 <!-- zh: 最后更新 -->
-- 2026-03-02
+- 2026-03-03
