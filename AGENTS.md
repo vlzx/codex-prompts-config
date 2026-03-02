@@ -65,6 +65,12 @@
 - If the user explicitly requests another language, follow the user's request.
 - Keep code snippets, commands, and file paths in their original form.
 
+## Engineering Principles
+<!-- zh: 工程原则 -->
+- Follow KISS (Keep It Simple, Stupid): prefer the simplest correct solution.
+- Avoid unnecessary abstraction, speculative generalization, and over-engineering.
+- If a complex solution is chosen, explain why simpler alternatives are not viable first.
+
 ## Default Workflow
 <!-- zh: 默认流程 -->
 - If user does not explicitly request code changes:
