@@ -71,11 +71,10 @@
 - Avoid unnecessary abstraction, speculative generalization, and over-engineering.
 - If a complex solution is chosen, explain why simpler alternatives are not viable first.
 
-## Specialized Rules
-<!-- zh: 专项规则 -->
-- Backend rules are moved to skill: [`backend-rules`](.agents/skills/backend-rules/SKILL.md).
-- Python rules are moved to skill: [`python-rules`](.agents/skills/python-rules/SKILL.md).
-- For backend tasks, load and follow `backend-rules`; for Python tasks, load and follow `python-rules`.
+## Skills
+<!-- zh: 技能 -->
+- Specialized rules are defined only in skills: [`backend-rules`](.agents/skills/backend-rules/SKILL.md), [`python-rules`](.agents/skills/python-rules/SKILL.md).
+- For backend or Python tasks, you must load the corresponding skill and treat it as the single source of truth.
 
 ## Default Workflow
 <!-- zh: 默认流程 -->
