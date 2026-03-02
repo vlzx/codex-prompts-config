@@ -84,19 +84,20 @@
 <!-- zh: 输出约定 -->
 - Final response must include:
   - `改动摘要`
-  - `改动文件`
-  - `验证执行`
-  - `验证结果`
-  - `未执行项与原因`
   - `下一步`
 - Field placeholder policy:
-  - If a field has no applicable content, fill with `无`.
+  - For required fields, if a field has no applicable content, fill with `无`.
   - If work was intentionally not performed, state `未执行` plus a short reason.
+  - For fields under `Include when applicable`, omit the field entirely when not applicable (do not output placeholders).
 - Include when applicable:
+  - `改动文件`
   - `风险与影响范围`
   - `回滚方案`
   - `假设与限制`
   - `建议验证`
+  - `验证执行`
+  - `验证结果`
+  - `未执行项与原因`
 
 ## Fallback Rules
 <!-- zh: 兜底规则 -->
