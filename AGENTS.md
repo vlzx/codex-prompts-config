@@ -14,6 +14,7 @@
 ### Forbidden Directories
 <!-- zh: 禁止修改的目录 -->
 - `data/`
+- `logs/`
 
 ### Forbidden Files
 <!-- zh: 禁止修改的文件 -->
@@ -83,7 +84,19 @@
 <!-- zh: 输出约定 -->
 - Final response must include:
   - `改动摘要`
+  - `改动文件`
+  - `验证执行`
+  - `验证结果`
+  - `未执行项与原因`
   - `下一步`
+- Field placeholder policy:
+  - If a field has no applicable content, fill with `无`.
+  - If work was intentionally not performed, state `未执行` plus a short reason.
+- Include when applicable:
+  - `风险与影响范围`
+  - `回滚方案`
+  - `假设与限制`
+  - `建议验证`
 
 ## Fallback Rules
 <!-- zh: 兜底规则 -->
