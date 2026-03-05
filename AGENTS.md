@@ -31,7 +31,7 @@
 - Allowed only when the user explicitly asks for implementation/code edits.
 - Keep edits minimal, scoped to requested files/lines.
 - Do not perform repository-wide refactors unless explicitly requested.
-- All newly created or modified classes and functions must include a one-sentence docstring without ending punctuation
+- All newly created or modified classes and functions must include a one-sentence Chinese docstring without ending punctuation.
 
 ### Formatting / Auto-fix
 <!-- zh: 格式化与自动修复 -->
