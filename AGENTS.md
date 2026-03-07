@@ -14,7 +14,7 @@
 ### Forbidden Directories
 <!-- zh: 禁止修改的目录 -->
 - `data/`
-- `logs/`
+- `secrets/`
 
 ### Forbidden Files
 <!-- zh: 禁止修改的文件 -->
@@ -74,7 +74,7 @@
 
 ## Skills
 <!-- zh: 技能 -->
-- Specialized rules are defined only in skills: [`backend-rules`](.agents/skills/backend-rules/SKILL.md), [`python-rules`](.agents/skills/python-rules/SKILL.md).
+- Specialized rules are defined only in skills: [`backend-rules`](.codex/skills/backend-rules/SKILL.md), [`python-rules`](.codex/skills/python-rules/SKILL.md).
 - For backend or Python tasks, you must load the corresponding skill and treat it as the single source of truth.
 
 ## Default Workflow
@@ -118,4 +118,4 @@
 
 ## Last Updated
 <!-- zh: 最后更新 -->
-- 2026-03-06
+- 2026-03-08
