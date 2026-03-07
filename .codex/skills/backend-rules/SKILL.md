@@ -28,3 +28,4 @@ description: Use this skill when implementing or reviewing backend API/service c
 - Must record end-to-end request latency in milliseconds for every endpoint;
   must separately measure DB latency and external-call latency (including timeout counts).
 - Must log request/response content for every endpoint.
+- API endpoints must not end with a trailing slash `/`.
