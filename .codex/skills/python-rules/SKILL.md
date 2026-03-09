@@ -16,3 +16,5 @@ description: Use this skill when implementing or reviewing Python code to enforc
   catch specific exception types;
   use `except Exception` only at explicit application boundaries with concrete handling.
 - For string interpolation involving variables, use f-strings.
+- Use top-level imports by default;
+  do not use lazy imports inside functions or methods unless the user explicitly requests an exception.
