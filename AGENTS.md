@@ -44,6 +44,9 @@
 <!-- zh: 依赖与网络 -->
 - Do not install/update dependencies without explicit user confirmation.
 - Do not fetch remote resources without explicit user confirmation.
+- Default `conda` environment: `<FILL_CONDA_ENV_NAME>`.
+- Before running Python-related commands, use the `conda` environment specified above.
+- If `Default conda environment` is still `<FILL_CONDA_ENV_NAME>`, stop and remind the user to fill in the environment name first.
 
 ### Validation / Commands
 <!-- zh: 验证与命令 -->
@@ -118,4 +121,4 @@
 
 ## Last Updated
 <!-- zh: 最后更新 -->
-- 2026-03-09
+- 2026-03-14
