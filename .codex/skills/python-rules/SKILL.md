@@ -12,6 +12,7 @@ description: Use this skill when implementing or reviewing Python code to enforc
 ## Rules
 - Must provide type hints for parameters and return values on all newly added or modified functions;
   test-only helper functions may be exempt.
+- Must not use `Any` in type annotations unless it is truly necessary and no narrower reasonable type can express the contract.
 - Must not use `except:` (bare except);
   catch specific exception types;
   use `except Exception` only at explicit application boundaries with concrete handling.
